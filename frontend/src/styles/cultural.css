@@ -1,0 +1,524 @@
+/* Indian Culture App - Cultural Styles */
+
+/* Import Google Fonts for Indian Scripts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Cultural CSS Custom Properties */
+:root {
+  /* Cultural Color System */
+  --saffron-primary: #FF9933;
+  --saffron-light: #FFB366;
+  --saffron-dark: #E6851A;
+  
+  --temple-orange: #FF6B35;
+  --temple-orange-light: #FF8A5B;
+  --temple-orange-dark: #E55A2B;
+  
+  --royal-blue: #000080;
+  --royal-blue-light: #4169E1;
+  --royal-blue-dark: #000066;
+  
+  --emerald-green: #138808;
+  --emerald-light: #32CD32;
+  --emerald-dark: #0F6B06;
+  
+  --rajasthani-pink: #FF69B4;
+  --kerala-gold: #FFD700;
+  --kashmiri-crimson: #DC143C;
+  --mysore-purple: #800080;
+  
+  --sandstone: #F4E4BC;
+  --charcoal: #36454F;
+  --ivory: #FFFFF0;
+  
+  /* Cultural Spacing (Golden Ratio) */
+  --space-sacred-xs: 0.382rem;
+  --space-sacred-sm: 0.618rem;
+  --space-sacred: 1rem;
+  --space-sacred-md: 1.618rem;
+  --space-sacred-lg: 2.618rem;
+  --space-sacred-xl: 4.236rem;
+  
+  /* Cultural Typography */
+  --font-devanagari: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+  --font-cultural: 'Inter', 'Roboto', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Crimson Text', 'Playfair Display', serif;
+  
+  /* Cultural Shadows */
+  --shadow-temple: 0 8px 32px rgba(255, 153, 51, 0.2);
+  --shadow-mandala: 0 0 20px rgba(255, 215, 0, 0.3);
+  --shadow-heritage: 0 4px 16px rgba(220, 20, 60, 0.15);
+  --shadow-cultural: 0 2px 8px rgba(54, 69, 79, 0.1);
+}
+
+/* Cultural Keyframe Animations */
+@keyframes lotus-bloom {
+  0% { 
+    transform: scale(0.8) rotate(0deg); 
+    opacity: 0.7; 
+  }
+  50% { 
+    transform: scale(1.1) rotate(180deg); 
+    opacity: 1; 
+  }
+  100% { 
+    transform: scale(1) rotate(360deg); 
+    opacity: 0.9; 
+  }
+}
+
+@keyframes peacock-shimmer {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+@keyframes scroll-unfurl {
+  0% { 
+    height: 0; 
+    opacity: 0; 
+    transform: rotateX(-90deg); 
+  }
+  100% { 
+    height: auto; 
+    opacity: 1; 
+    transform: rotateX(0deg); 
+  }
+}
+
+@keyframes mandala-spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+@keyframes heritage-glow {
+  0% { 
+    box-shadow: 0 0 5px rgba(255, 153, 51, 0.3); 
+  }
+  100% { 
+    box-shadow: 0 0 20px rgba(255, 153, 51, 0.6); 
+  }
+}
+
+@keyframes cultural-fade-in {
+  0% { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes rangoli-pulse {
+  0%, 100% { 
+    transform: scale(1); 
+    opacity: 0.8; 
+  }
+  50% { 
+    transform: scale(1.05); 
+    opacity: 1; 
+  }
+}
+
+/* Cultural Pattern Backgrounds */
+.bg-paisley-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF9933' fill-opacity='0.05'%3E%3Cpath d='M30 15c-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15zm0 25c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 60px 60px;
+}
+
+.bg-mandala-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFD700' fill-opacity='0.03'%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3Ccircle cx='40' cy='40' r='15'/%3E%3Ccircle cx='40' cy='40' r='10'/%3E%3Ccircle cx='40' cy='40' r='5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 80px 80px;
+}
+
+.bg-geometric-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23DC143C' fill-opacity='0.04'%3E%3Cpolygon points='20,0 40,20 20,40 0,20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 40px 40px;
+}
+
+/* Cultural Component Styles */
+
+/* Language Selector - Traditional Scroll Style */
+.language-selector {
+  position: relative;
+  font-family: var(--font-devanagari);
+  min-width: 200px;
+}
+
+.language-selector .scroll-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sacred-sm) var(--space-sacred-md);
+  background: linear-gradient(135deg, var(--sandstone) 0%, var(--ivory) 100%);
+  border: 2px solid var(--kerala-gold);
+  border-radius: 1rem 1rem 0.25rem 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-cultural);
+}
+
+.language-selector .scroll-header:hover {
+  box-shadow: var(--shadow-temple);
+  transform: translateY(-1px);
+}
+
+.language-selector .current-language-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  margin: 0 var(--space-sacred-sm);
+}
+
+.language-selector .current-language {
+  font-weight: 500;
+  color: var(--charcoal);
+}
+
+.language-selector .current-language-english {
+  color: var(--charcoal);
+  opacity: 0.7;
+}
+
+.language-selector .scroll-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sacred-xs);
+}
+
+.language-selector .language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--ivory);
+  border: 2px solid var(--kerala-gold);
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  z-index: 1000;
+  animation: scroll-unfurl 0.5s ease-out;
+  box-shadow: var(--shadow-temple);
+}
+
+.language-selector .search-container input {
+  font-family: var(--font-cultural);
+}
+
+.language-selector .language-options {
+  max-height: 240px;
+}
+
+.language-selector .language-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sacred-sm) var(--space-sacred-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.language-selector .language-option:hover {
+  background: linear-gradient(90deg, rgba(255, 153, 51, 0.1), transparent);
+  color: var(--charcoal);
+}
+
+.language-selector .language-option:focus {
+  background: linear-gradient(90deg, rgba(255, 153, 51, 0.15), transparent);
+  outline: none;
+}
+
+.language-selector .language-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.language-selector .script {
+  color: var(--charcoal);
+  line-height: 1.2;
+}
+
+.language-selector .english-name {
+  color: var(--charcoal);
+  opacity: 0.7;
+  line-height: 1.2;
+}
+
+.language-selector .language-symbols {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sacred-xs);
+}
+
+.language-selector .selected-indicator {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.language-selector .dropdown-footer {
+  background: rgba(255, 215, 0, 0.05);
+  font-family: var(--font-cultural);
+}
+
+/* Heritage Card - Cultural Styling */
+.heritage-card {
+  position: relative;
+  background: var(--ivory);
+  border: 2px solid var(--kerala-gold);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-cultural);
+}
+
+.heritage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-temple);
+}
+
+.heritage-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF9933' fill-opacity='0.02'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Cultural Buttons */
+.btn-cultural {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sacred-sm);
+  padding: var(--space-sacred-sm) var(--space-sacred-md);
+  font-family: var(--font-cultural);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-cultural-primary {
+  background: linear-gradient(135deg, var(--saffron-primary) 0%, var(--temple-orange) 100%);
+  color: white;
+  box-shadow: var(--shadow-cultural);
+}
+
+.btn-cultural-primary:hover {
+  background: linear-gradient(135deg, var(--saffron-dark) 0%, var(--temple-orange-dark) 100%);
+  box-shadow: var(--shadow-temple);
+  transform: translateY(-1px);
+}
+
+.btn-cultural-secondary {
+  background: transparent;
+  color: var(--saffron-primary);
+  border: 2px solid var(--saffron-primary);
+}
+
+.btn-cultural-secondary:hover {
+  background: var(--saffron-primary);
+  color: white;
+}
+
+/* Cultural Loading States */
+.loading-mandala {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--kerala-gold);
+  border-top: 4px solid var(--saffron-primary);
+  border-radius: 50%;
+  animation: mandala-spin 2s linear infinite;
+  filter: drop-shadow(0 0 8px var(--saffron-primary));
+}
+
+.loading-lotus {
+  width: 32px;
+  height: 32px;
+  background: var(--emerald-green);
+  border-radius: 50%;
+  animation: lotus-bloom 2s ease-in-out infinite;
+}
+
+/* Cultural Typography Classes */
+.text-cultural-heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: var(--charcoal);
+}
+
+.text-cultural-body {
+  font-family: var(--font-cultural);
+  line-height: 1.618; /* Golden ratio */
+  color: var(--charcoal);
+}
+
+.text-devanagari {
+  font-family: var(--font-devanagari);
+}
+
+/* Cultural Spacing Utilities */
+.space-sacred-xs { margin: var(--space-sacred-xs); }
+.space-sacred-sm { margin: var(--space-sacred-sm); }
+.space-sacred { margin: var(--space-sacred); }
+.space-sacred-md { margin: var(--space-sacred-md); }
+.space-sacred-lg { margin: var(--space-sacred-lg); }
+.space-sacred-xl { margin: var(--space-sacred-xl); }
+
+.p-sacred-xs { padding: var(--space-sacred-xs); }
+.p-sacred-sm { padding: var(--space-sacred-sm); }
+.p-sacred { padding: var(--space-sacred); }
+.p-sacred-md { padding: var(--space-sacred-md); }
+.p-sacred-lg { padding: var(--space-sacred-lg); }
+.p-sacred-xl { padding: var(--space-sacred-xl); }
+
+/* Cultural Gradients */
+.bg-saffron-gradient {
+  background: linear-gradient(135deg, var(--saffron-primary) 0%, var(--saffron-light) 100%);
+}
+
+.bg-temple-gradient {
+  background: linear-gradient(135deg, var(--temple-orange) 0%, var(--temple-orange-light) 100%);
+}
+
+.bg-cultural-sunset {
+  background: linear-gradient(135deg, var(--saffron-primary) 0%, var(--temple-orange) 50%, var(--kashmiri-crimson) 100%);
+}
+
+.bg-heritage-dawn {
+  background: linear-gradient(135deg, var(--kerala-gold) 0%, var(--rajasthani-pink) 50%, var(--mysore-purple) 100%);
+}
+
+/* Cultural Animations */
+.animate-lotus-bloom {
+  animation: lotus-bloom 2s ease-in-out infinite;
+}
+
+.animate-peacock-shimmer {
+  animation: peacock-shimmer 3s ease-in-out infinite;
+}
+
+.animate-scroll-unfurl {
+  animation: scroll-unfurl 0.5s ease-out;
+}
+
+.animate-heritage-glow {
+  animation: heritage-glow 2s ease-in-out infinite alternate;
+}
+
+.animate-cultural-fade {
+  animation: cultural-fade-in 0.6s ease-out;
+}
+
+.animate-rangoli-pulse {
+  animation: rangoli-pulse 2s ease-in-out infinite;
+}
+
+/* Cultural Focus States */
+.focus-cultural:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 153, 51, 0.4);
+}
+
+/* Cultural Hover Effects */
+.hover-cultural {
+  transition: all 0.3s ease;
+}
+
+.hover-cultural:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-temple);
+}
+
+/* Responsive Cultural Design */
+@media (max-width: 640px) {
+  :root {
+    --space-sacred-xs: 0.25rem;
+    --space-sacred-sm: 0.5rem;
+    --space-sacred: 0.75rem;
+    --space-sacred-md: 1rem;
+    --space-sacred-lg: 1.5rem;
+    --space-sacred-xl: 2rem;
+  }
+  
+  .heritage-card {
+    border-radius: 0.5rem;
+  }
+  
+  .text-cultural-heading {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heritage-card:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+}
+
+/* Cultural Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .animate-lotus-bloom,
+  .animate-peacock-shimmer,
+  .animate-scroll-unfurl,
+  .animate-heritage-glow,
+  .animate-cultural-fade,
+  .animate-rangoli-pulse {
+    animation: none;
+  }
+  
+  .hover-cultural:hover {
+    transform: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --saffron-primary: #FF6600;
+    --charcoal: #000000;
+    --ivory: #FFFFFF;
+  }
+  
+  .heritage-card {
+    border-width: 3px;
+  }
+}
+
+/* Cultural Print Styles */
+@media print {
+  .heritage-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 2px solid var(--charcoal);
+  }
+  
+  .bg-paisley-pattern,
+  .bg-mandala-pattern,
+  .bg-geometric-pattern {
+    background: none;
+  }
+}

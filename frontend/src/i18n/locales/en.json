@@ -1,0 +1,85 @@
+{
+  "app": {
+    "title": "Indian Culture App",
+    "subtitle": "Explore India's Rich Cultural Heritage"
+  },
+  "navigation": {
+    "home": "Home",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "city": {
+    "select": "Select a City",
+    "search": "Search cities...",
+    "filterByState": "Filter by State",
+    "filterByRegion": "Filter by Region",
+    "heritageCount": "{{count}} heritage sites",
+    "loading": "Loading cities...",
+    "notFound": "No cities found",
+    "backToList": "Back to Cities",
+    "name": "City"
+  },
+  "heritage": {
+    "more": "More",
+    "less": "Less",
+    "category": "Category",
+    "categories": {
+      "monuments": "Monuments",
+      "temples": "Temples",
+      "festivals": "Festivals",
+      "traditions": "Traditions",
+      "cuisine": "Cuisine",
+      "art_forms": "Art Forms",
+      "historical_events": "Historical Events",
+      "customs": "Customs"
+    },
+    "loading": "Loading heritage...",
+    "notFound": "No heritage items found",
+    "viewGallery": "View Gallery"
+  },
+  "gallery": {
+    "loading": "Loading images...",
+    "error": "Failed to load image",
+    "close": "Close",
+    "imageOf": "Image {{current}} of {{total}}",
+    "description": "Description",
+    "culturalContext": "Cultural Significance",
+    "location": "Location",
+    "period": "Period",
+    "showDetails": "Show Details",
+    "hideDetails": "Hide Details"
+  },
+  "language": {
+    "select": "Select Language",
+    "current": "Current Language",
+    "selector": {
+      "label": "Select Language"
+    },
+    "dropdown": {
+      "label": "Available Languages"
+    },
+    "search": {
+      "placeholder": "Search languages...",
+      "label": "Search languages"
+    },
+    "loading": "Loading languages...",
+    "no_results": "No languages found",
+    "count": "{{count}} languages supported"
+  },
+  "error": {
+    "general": "Something went wrong",
+    "network": "Network error. Please check your connection.",
+    "notFound": "Page not found",
+    "loading": "Failed to load content",
+    "retry": "Try Again",
+    "unexpected": "An unexpected error occurred",
+    "tryAgainLater": "Please try again later"
+  },
+  "loading": {
+    "general": "Loading...",
+    "cities": "Loading cities...",
+    "heritage": "Loading heritage...",
+    "images": "Loading images..."
+  }
+}

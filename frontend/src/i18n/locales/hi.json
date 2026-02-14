@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "भारतीय संस्कृति ऐप",
+    "subtitle": "भारत की समृद्ध सांस्कृतिक विरासत का अन्वेषण करें"
+  },
+  "navigation": {
+    "home": "होम",
+    "back": "वापस",
+    "next": "अगला",
+    "previous": "पिछला"
+  },
+  "city": {
+    "select": "एक शहर चुनें",
+    "search": "शहर खोजें...",
+    "filterByState": "राज्य के अनुसार फ़िल्टर करें",
+    "filterByRegion": "क्षेत्र के अनुसार फ़िल्टर करें",
+    "heritageCount": "{{count}} विरासत स्थल",
+    "loading": "शहर लोड हो रहे हैं...",
+    "notFound": "कोई शहर नहीं मिला"
+  },
+  "heritage": {
+    "more": "अधिक",
+    "less": "कम",
+    "category": "श्रेणी",
+    "categories": {
+      "monuments": "स्मारक",
+      "temples": "मंदिर",
+      "festivals": "त्योहार",
+      "traditions": "परंपराएं",
+      "cuisine": "व्यंजन",
+      "art_forms": "कला रूप",
+      "historical_events": "ऐतिहासिक घटनाएं",
+      "customs": "रीति-रिवाज"
+    },
+    "loading": "विरासत लोड हो रही है...",
+    "notFound": "कोई विरासत आइटम नहीं मिला",
+    "viewGallery": "गैलरी देखें"
+  },
+  "gallery": {
+    "loading": "चित्र लोड हो रहे हैं...",
+    "error": "चित्र लोड करने में विफल",
+    "close": "बंद करें",
+    "imageOf": "चित्र {{current}} का {{total}}",
+    "description": "विवरण",
+    "culturalContext": "सांस्कृतिक महत्व",
+    "location": "स्थान",
+    "period": "काल",
+    "showDetails": "विवरण दिखाएं",
+    "hideDetails": "विवरण छुपाएं"
+  },
+  "language": {
+    "select": "भाषा चुनें",
+    "current": "वर्तमान भाषा",
+    "selector": {
+      "label": "भाषा चुनें"
+    },
+    "dropdown": {
+      "label": "उपलब्ध भाषाएं"
+    },
+    "search": {
+      "placeholder": "भाषाएं खोजें...",
+      "label": "भाषाएं खोजें"
+    },
+    "loading": "भाषाएं लोड हो रही हैं...",
+    "no_results": "कोई भाषा नहीं मिली",
+    "count": "{{count}} भाषाएं समर्थित"
+  },
+  "error": {
+    "general": "कुछ गलत हुआ",
+    "network": "नेटवर्क त्रुटि। कृपया अपना कनेक्शन जांचें।",
+    "notFound": "पृष्ठ नहीं मिला",
+    "loading": "सामग्री लोड करने में विफल",
+    "retry": "पुनः प्रयास करें"
+  },
+  "loading": {
+    "general": "लोड हो रहा है...",
+    "cities": "शहर लोड हो रहे हैं...",
+    "heritage": "विरासत लोड हो रही है...",
+    "images": "चित्र लोड हो रहे हैं..."
+  }
+}

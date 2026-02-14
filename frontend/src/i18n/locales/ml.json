@@ -1,0 +1,62 @@
+{
+  "app": {
+    "title": "Indian Culture App",
+    "subtitle": "Explore India's Rich Cultural Heritage"
+  },
+  "navigation": {
+    "home": "Home",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "city": {
+    "select": "Select a City",
+    "search": "Search cities...",
+    "filterByState": "Filter by State",
+    "filterByRegion": "Filter by Region",
+    "heritageCount": "{{count}} heritage sites",
+    "loading": "Loading cities...",
+    "notFound": "No cities found"
+  },
+  "heritage": {
+    "more": "More",
+    "less": "Less",
+    "category": "Category",
+    "categories": {
+      "monuments": "Monuments",
+      "temples": "Temples",
+      "festivals": "Festivals",
+      "traditions": "Traditions",
+      "cuisine": "Cuisine",
+      "art_forms": "Art Forms",
+      "historical_events": "Historical Events",
+      "customs": "Customs"
+    },
+    "loading": "Loading heritage...",
+    "notFound": "No heritage items found",
+    "viewGallery": "View Gallery"
+  },
+  "gallery": {
+    "loading": "Loading images...",
+    "error": "Failed to load image",
+    "close": "Close",
+    "imageOf": "Image {{current}} of {{total}}"
+  },
+  "language": {
+    "select": "Select Language",
+    "current": "Current Language"
+  },
+  "error": {
+    "general": "Something went wrong",
+    "network": "Network error. Please check your connection.",
+    "notFound": "Page not found",
+    "loading": "Failed to load content",
+    "retry": "Try Again"
+  },
+  "loading": {
+    "general": "Loading...",
+    "cities": "Loading cities...",
+    "heritage": "Loading heritage...",
+    "images": "Loading images..."
+  }
+}
