@@ -1,0 +1,31 @@
+# Server Configuration
+PORT=3000
+NODE_ENV=development
+
+# Database Configuration
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=indian_culture
+DB_USER=postgres
+DB_PASSWORD=postgres
+
+# CORS Configuration
+CORS_ORIGIN=http://localhost:5173
+
+# Cache Configuration
+CACHE_TTL=900
+
+# Image Storage (S3/Cloudinary)
+IMAGE_STORAGE_PROVIDER=local
+IMAGE_BASE_URL=http://localhost:3000/images
+
+# AWS S3 (if using S3)
+# AWS_REGION=us-east-1
+# AWS_ACCESS_KEY_ID=your_access_key
+# AWS_SECRET_ACCESS_KEY=your_secret_key
+# S3_BUCKET_NAME=indian-culture-images
+
+# Cloudinary (if using Cloudinary)
+# CLOUDINARY_CLOUD_NAME=your_cloud_name
+# CLOUDINARY_API_KEY=your_api_key
+# CLOUDINARY_API_SECRET=your_api_secret
